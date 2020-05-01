@@ -1,0 +1,178 @@
+/*****************
+    Global styles 
+*****************/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+/***********************
+Layout container styles 
+************************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/****************
+Top text styles 
+*****************/
+.text-top {
+    text-align: center;
+    letter-spacing: .5px;
+    margin: 5em 0;
+    font-size: 20px;
+}
+
+.text-first {
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.text-second {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.text-first,
+.text-second,
+.title-card {
+    color: #47485C;
+}
+
+
+.text-top-description {
+    font-weight: 300;
+}
+
+.text-top-description,
+.text-card {
+    color: gray;
+}
+
+/***********
+    Cards 
+************/
+.cards {
+    margin: auto 0;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.card {
+    flex: 0 0 100%;
+    margin-bottom: 1.5em;
+    box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+    border-radius: 5px;
+    border-top: 5px solid;
+    align-items: center;
+}
+
+.card-text-container {
+    padding: 30px;
+}
+
+.title-card {
+    text-transform: capitalize;
+    margin-bottom: .5em;
+}
+
+.text-card {
+    font-weight: 200;
+    margin-bottom: 1.5rem;
+}
+
+.card-img {
+    text-align: right;
+    margin: 0 20px 20px 0;
+}
+
+/***********
+Borders 
+************/
+
+.border-cyan {
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.border-red {
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.border-yellow {
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+.border-blue {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+/***********
+Media Querys
+************/
+@media only screen and (min-width: 480px) {
+    
+    .text-top-description {
+        font-size: 1rem;
+    }
+    
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        flex: 0 0 40%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    
+    .cards {
+        display: grid;
+        margin: 0 auto;
+        gap: 5px 30px;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-template-rows: auto;
+        width: 65%;
+    }
+
+    .card {
+        transition: all .8s ease-in-out ;
+    }
+
+    .card:hover {
+        transform: scale(1.03, 1.03);
+        cursor: pointer;
+    }
+
+    .border-red {
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+    }
+
+    .border-cyan {
+        grid-column: 1 / 2;
+        grid-row: 2 / 5;
+    }
+
+    .border-yellow {
+        grid-column: 2 / 3;
+        grid-row: 4 / 6;
+    }
+
+    .border-blue {
+        grid-column: 3 / 4;
+        grid-row: 2 / 5;
+    }
+
+}
+
