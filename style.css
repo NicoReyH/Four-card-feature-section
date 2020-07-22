@@ -69,6 +69,7 @@ Top text styles
   flex: 0 0 100%;
   margin-bottom: 1.5em;
   box-shadow: 1px 1px 10px hsl(229, 6%, 66%);
+  background-color: #fff;
   border-radius: 5px;
   border-top: 5px solid;
   align-items: center;
