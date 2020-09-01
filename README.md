@@ -1,2 +1,2 @@
 # fementor-four-card-feature-section
-First and easiest project of frontendmentor.io
+Just a desing of a cards features.
